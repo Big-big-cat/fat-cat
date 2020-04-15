@@ -1,0 +1,48 @@
+<view>
+    <view class="item">
+        <view>头像</view>
+        <image src="{{userInfo.avatarUrl}}" class="image"></image>
+    </view>
+    <view class="item">
+        <view>昵称</view>
+        <view class="right">{{userInfo.nickName}}</view>
+    </view>
+    <view class="item">
+        <view>性别</view>
+        <view class="right">{{userInfo.gender == 1 ? '男' : '女'}}</view>
+    </view>
+    <view class="item">
+        <view>当前地址</view>
+        <view class="right">{{dizhi.data.result.address}}</view>
+    </view>
+    <view class="item">
+        <view>星期</view>
+        <view class="right" wx:if='{{xq == 1}}'>一</view>
+        <view class="right" wx:if='{{xq == 2}}'>二</view>
+        <view class="right" wx:if='{{xq == 3}}'>三</view>
+        <view class="right" wx:if='{{xq == 4}}'>四</view>
+        <view class="right" wx:if='{{xq == 5}}'>五</view>
+        <view class="right" wx:if='{{xq == 6}}'>六</view>
+        <view class="right" wx:if='{{xq == 7}}'>日</view>
+    </view>
+    <view class="item">
+        <view>年月日</view>
+        <view class="right">{{year}}-{{month < 10 ? '0' + month : month}}-{{day < 10 ? '0' + day : day}}</view>
+    </view>
+    <view class="item">
+        <view>时分秒</view>
+        <view class="right">{{hour < 10 ? '0' + hour : hour}}:{{minu < 10 ? '0' + minu : minu}}:{{seco < 10 ? '0' + seco : seco}}</view>
+    </view>
+    <view class="item">
+        <view>附近商圈</view>
+        <view class="right">{{dizhi.data.result.address_reference.business_area.title}}</view>
+    </view>
+    <view class="item">
+        <view>附近路口</view>
+        <view class="right">{{dizhi.data.result.address_reference.crossroad.title}}</view>
+    </view>
+    <view class="item">
+        <view>附近街道</view>
+        <view class="right">{{dizhi.data.result.address_reference.town.title}}</view>
+    </view>
+</view>

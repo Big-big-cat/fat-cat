@@ -1,0 +1,63 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/anges/index",
+        "pages/logs/logs",
+        "pages/dial/index",
+        "pages/test/index",
+        "pages/dices/idnex",
+        "pages/randomNum/index",
+        "pages/custom/index",
+        "pages/custom/itemSetting/index",
+        "pages/map/index",
+        "pages/showMap/index",
+        "pages/destiny/index",
+        "pages/add/index",
+        "pages/user/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "anges",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "backgroundColor": "#fff",
+        "borderStyle": "black",
+        "color": "#cccccc",
+        "selectedColor": "#169BD5",
+        "list": [
+            {
+                "selectedIconPath": "images/zp_active.png",
+                "iconPath": "images/zp.png",
+                "pagePath": "pages/anges/index",
+                "text": "转盘"
+            },
+            {
+                "selectedIconPath": "images/home_active.png",
+                "iconPath": "images/home.png",
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "selectedIconPath": "images/fxp_active.png",
+                "iconPath": "images/fxp.png",
+                "pagePath": "pages/dial/index",
+                "text": "小色子"
+            }
+        ]
+    },
+    "plugins": {
+        "routePlan": {
+            "version": "1.0.5",
+            "provider": "wx50b5593e81dd937a"
+        }
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用你方便被逮捕"
+        }
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

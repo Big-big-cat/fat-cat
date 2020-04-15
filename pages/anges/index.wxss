@@ -1,0 +1,11 @@
+/* pages/anges/index.wxss */
+.st {
+    width: 266rpx;
+    height: 106rpx;
+    background: rgb(149, 101, 158);
+    border-radius: 12rpx;
+    color: #fff;
+    text-align: center;
+    line-height: 106rpx;
+    margin: 20rpx auto;
+}

@@ -1,0 +1,18 @@
+/* pages/user/index.wxss */
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30rpx 32rpx;
+    box-sizing: border-box;
+    border-bottom: 1rpx solid #8799a3;
+}
+.image {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+.right {
+    color: #8799a3;
+    font-size: 28rpx;
+}

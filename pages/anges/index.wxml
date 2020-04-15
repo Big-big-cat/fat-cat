@@ -1,0 +1,14 @@
+<view>
+    <view style="text-align:center;margin:30rpx 0;" wx:for="{{i}}">
+        敬请等待
+       
+    </view>
+     <view class="st" catchtap="click">点</view>
+     <view class="st" catchtap="sclick">摇一摇</view>
+     <view class="st" catchtap="bclick">比比谁大</view>
+     <view class="st" catchtap="zclick">自定义</view>
+     <view class="st" catchtap="tclick">逃出升天</view>
+     <view class="st" catchtap="yclick">以死相博</view>
+     <view class="st" catchtap="qclick">前世今生</view>
+     <view class="st" catchtap="aclick">计算和</view>
+</view>

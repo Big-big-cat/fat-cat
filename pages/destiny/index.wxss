@@ -1,0 +1,90 @@
+/* pages/destiny/index.wxss */
+.title {
+    margin: 16rpx auto;
+    text-align: center;
+    color: 	#B22222;
+    font-size: 36rpx;
+    font-weight: bold;
+}
+.input {
+    /* width: 80%; */
+    /* border: 2rpx solid #B22222; */
+    height: 58rpx;
+    box-sizing: border-box;
+    margin: 16rpx;
+    border-radius: 8rpx;
+    background:#B22222;
+    display: flex;
+    justify-content: space-between;
+}
+._input {
+    width: 76%;
+    height: 100%;
+    color:#708090;
+    margin-left: 24rpx;
+    font-size: 32rpx;
+}
+.p_input {
+    color: #fff;
+    text-indent: 12rpx;
+    font-size: 28rpx;
+}
+.search {
+    /* width: 20%; */
+    /* height: 100%; */
+    /* text-align: center; */
+    /* line-height: 58rpx; */
+    background: #708090;
+    color: #090909;
+    /* border-top-right-radius: 8rpx; */
+    /* border-bottom-right-radius: 8rpx; */
+    padding: 0;
+    margin: 0;
+}
+button::after {
+  border: none;
+  border-radius: 0;
+}
+.fraud {
+    margin: 16rpx;
+    /* height: 300rpx; */
+    background: #708090;
+    border-radius: 8rpx;
+}
+.fraud_title {
+    text-align: center;
+    color: #B22222;
+    font-size: 32rpx;
+    font-weight: bold;
+    padding: 16rpx 0 0;
+}
+.pass_by,.at_present {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32rpx;
+}
+.at_present {
+    padding-bottom: 16rpx;
+}
+.pass_by_title {
+    width: 16%;
+    text-align: center;
+    color: #DC143C;
+    font-weight: bold;
+    font-size: 40rpx;
+}
+.pass_by_count {
+    flex: 1;
+    text-align: left;
+    color: #DC143C;
+}
+.count {
+    color: #0000FF;
+}
+
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}

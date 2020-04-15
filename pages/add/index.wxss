@@ -1,0 +1,26 @@
+/* pages/add/index.wxss */
+.box {
+    width: 45%;
+    height: 66rpx;
+    background: #8799a3;
+}
+.boxs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 12vh;
+}
+._input {
+    text-align: center;
+    color: #e54d42;
+}
+input {
+    text-align: center;
+    height: 66rpx;
+    color: #6739b6;
+}
+.lj {
+    text-align: center;
+    padding: 16rpx;
+    color: #f37b1d;
+}

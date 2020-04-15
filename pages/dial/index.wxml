@@ -1,0 +1,10 @@
+<view>
+    <view class="all">
+        <view class="top">
+            <view wx:for="{{list}}" class="common {{index == 4 ? 'kb' : ''}} {{index == i ? 'amition' : ''}}" data-index="{{index}}" catchtap="clickJump">{{item}}</view>
+        </view>
+        
+    </view>
+    <button type="primary" catchtap="click" disabled="{{disable}}">开始</button>
+    <button type="warn" catchtap="shopSettime">暂停</button>
+</view>

@@ -1,0 +1,17 @@
+<view>
+    <view class="pic">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker">
+                项目选择：{{array[index]}}
+            </view>
+        </picker>
+    </view>
+    <view class="all">
+        <view class="common {{index == i ? 'amition' : ''}}" wx:for="{{list}}" data-index="{{index}}">
+            {{item.name}}
+        </view>
+    </view>
+    <button type="primary" catchtap="click" disabled="{{disable}}">开始</button>
+    <button type="warn" catchtap="shopSettime">暂停</button>
+    
+</view>

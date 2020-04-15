@@ -1,0 +1,12 @@
+<view class="boxs">
+    <view class="box">
+        <input type="number" bindinput="bindinputSmall" placeholder="请输入最小数字" placeholder-class="_input"></input>
+    </view>
+    <view class="box">
+        <input type="number" bindinput="bindinputBig" placeholder="请输入最大数字" placeholder-class="_input"></input>
+    </view>
+</view>
+<view class="lj">{{aggregateValue}}</view>
+<view style="margin-top:16vh;">
+    <button type="primary" bindtap="click">计算</button>
+</view>

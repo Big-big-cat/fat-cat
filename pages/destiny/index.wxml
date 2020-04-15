@@ -1,0 +1,75 @@
+<view>
+    <view class="title">
+        <text>命运无常 福祸难测 人生尽在此处</text>
+    </view>
+    <view class="input">
+        <input class="_input" type="text" maxlength="8" placeholder-class="p_input" placeholder="输入姓名——驱邪避祸" bindinput="bindinput" bindfocus="bindfocus"></input>
+        <button class="search" size="mini" confirm-type='search' bindtap="searchClick" disabled="{{disabled}}">搜索</button>
+    </view>
+    <view class="fraud {{show ? 'show' : 'hide'}}">
+        <view>
+            <view class="fraud_title">
+                <text style="color: #000;">{{name}} </text>
+                <text>的{{fraudTitle}}</text>
+            </view>
+            <block>
+                <view class="pass_by">
+                    <view class="pass_by_title">前世</view>
+                    <view class="pass_by_count">
+                        <view>
+                            <view>你的前世是:</view>
+                            <view class="count">{{list[num].profession}}</view>
+                        </view>
+                        <view>
+                            <view>你的前世:</view>
+                            <view class="count">{{list[num].introduce}}</view>
+                        </view>
+                        <view>
+                            <view>前世的影响:</view>
+                            <view class="count">{{list[num].influence}}</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="at_present">
+                    <view class="pass_by_title">今生</view>
+                    <view class="pass_by_count">
+                        <view>{{list[num].now}}</view>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+    <view class="fraud {{gshow ? 'show' : 'hide'}}">
+        <view>
+            <view class="fraud_title">
+                <text style="color: #000;">龚爷 </text>
+                <text>的{{fraudTitle}}</text>
+            </view>
+            <block>
+                <view class="pass_by">
+                    <view class="pass_by_title">前世</view>
+                    <view class="pass_by_count">
+                        <view>
+                            <view>你的前世是:</view>
+                            <view class="count">{{ghl.profession}}</view>
+                        </view>
+                        <view>
+                            <view>你的前世:</view>
+                            <view class="count">{{ghl.introduce}}</view>
+                        </view>
+                        <view>
+                            <view>前世的影响:</view>
+                            <view class="count">{{ghl.influence}}</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="at_present">
+                    <view class="pass_by_title">今生</view>
+                    <view class="pass_by_count">
+                        <view>{{ghl.now}}</view>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,29 @@
+/* pages/test/index.wxss */
+.all {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.common {
+    width: 200rpx;
+    height: 200rpx;
+    background: #ace;
+    margin: 10rpx;
+    text-align: center;
+    line-height: 200rpx;
+}
+.pic {
+    padding: 30rpx;
+}
+.picker {
+    color: #9c26b0;
+    font-weight: bold;
+}
+
+.amition {
+    background: linear-gradient(to right, #0081ff ,#8799a3);
+    color: #fff;
+}
+button {
+    margin: 20rpx 0;
+}
