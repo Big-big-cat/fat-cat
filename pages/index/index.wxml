@@ -8,6 +8,6 @@
     </block>
   </view>
   <view class="usermotto" wx:if="{{show}}">
-    <text class="user-motto" bindtap="click">{{motto}}</text>
+    <text class="user-motto">{{motto}}</text>
   </view>
 </view>

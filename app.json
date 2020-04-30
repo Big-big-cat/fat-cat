@@ -3,7 +3,6 @@
         "pages/index/index",
         "pages/anges/index",
         "pages/logs/logs",
-        "pages/dial/index",
         "pages/test/index",
         "pages/dices/idnex",
         "pages/randomNum/index",
@@ -42,8 +41,8 @@
             {
                 "selectedIconPath": "images/fxp_active.png",
                 "iconPath": "images/fxp.png",
-                "pagePath": "pages/dial/index",
-                "text": "小色子"
+                "pagePath": "pages/user/index",
+                "text": "小伙子"
             }
         ]
     },

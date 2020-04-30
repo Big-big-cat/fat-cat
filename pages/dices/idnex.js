@@ -1,10 +1,11 @@
 // pages/dice/dices.js
-var utils = require("../../utils/util.js");
+var utils = require("../../utils/utils.js");
 Page({
     data: {
         diceCount: 1,
         dicesData: [],
-        hideBtn: false
+        hideBtn: false,
+        list: [1,2,3,4,5,6]
     },
     onLoad: function (options) {
         // 页面初始化 options为页面跳转所带来的参数
@@ -42,13 +43,14 @@ Page({
     // 产生色子点数
     createDotData: function () {
         var num = Math.ceil(Math.random() * 6);
+        
         var diceData = this.dotsData[num];
         var dotsHidden = {};
         for (var i = 1; i <= 9; i++) {
             if (diceData.indexOf(i) > -1) {
-                dotsHidden[i] = "black";
-            } else {
                 dotsHidden[i] = "white";
+            } else {
+                dotsHidden[i] = "black";
             }
         };
         return dotsHidden;
@@ -93,7 +95,6 @@ Page({
     // 设置色子数据
     setDicesData: function (diceCount) {
         var dicesData = [];
-
         // 色子动画数据
         var dicesPos = this.createDicesPos(); // 所有色子的位置数据
         for (var i = 0; i < diceCount; i++) {
@@ -127,16 +128,7 @@ Page({
         this.timer = setTimeout(function () {
             // 色子改变点数并移入屏幕
             that.setDicesData(that.data.diceCount);
-        }, 1000)
-
-        const innerAudioContext = wx.createInnerAudioContext();
-        innerAudioContext.autoplay = true;
-        innerAudioContext.src = '/audio/shaizi.mp3';
-        innerAudioContext.loop = true;
-        innerAudioContext.play();
-        setTimeout(function () {
-            innerAudioContext.pause()
-        }, 2500)
+        }, 1400)
 
     },
 
